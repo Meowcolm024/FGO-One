@@ -35,7 +35,7 @@ def recognize():
         support_interface.scene = sh
         support_interface.select_support()
         print("Position: ", support_interface.crd)
-    # recognize finish scene
+    # recognize finish interface
     for finish_scene in finish_scenes:
         finish_path = f"./assets/scene/{finish_scene}.png"
         if check(sh, finish_path, threshold) == 1:

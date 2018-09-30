@@ -11,4 +11,4 @@ support_scene = "support"
 battle_scenes = ["quick", "arts", "buster"]
 
 # the post-battle interface, which needs to tap on special location
-finish_scenes = ["bond", "matser"]
+finish_scenes = ["bond", "master"]
