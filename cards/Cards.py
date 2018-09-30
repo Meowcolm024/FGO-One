@@ -9,15 +9,9 @@ class Card:
         self.mark = ""
         self.type = ""
         self.priority = []
-        self.atk = 1
+        self.atk = 1.0
 
     def get_atk(self, ex):
-
-        # attack from mark of the card
-        if self.mark == restraint_mark:
-            self.atk = self.atk * restraint
-        elif self.mark == resistance_mark:
-            self.atk = self.atk * resistance
 
         # attack from type of the card
         if self.type == quick_card:
@@ -38,3 +32,9 @@ class Card:
         # attack from buster benefit
         if ex == 1:
             self.atk = self.atk + exbst
+
+        # attack from mark of the card
+        if self.mark == restraint_mark:
+            self.atk = self.atk * restraint
+        elif self.mark == resistance_mark:
+            self.atk = self.atk * resistance
