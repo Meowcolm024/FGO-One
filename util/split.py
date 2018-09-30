@@ -2,7 +2,7 @@ from PIL import Image
 
 
 def init():
-    im2 = Image.open("../assets/test/t.jpeg")
+    im2 = Image.open("../assets/test/t1.jpeg")
     img2_size = im2.size
     print("width % height: {}".format(img2_size))
     gap = (img2_size[0] - 1920) / 2
@@ -12,11 +12,11 @@ def init():
     bottom = img2_size[1]
     print((left, top, right, bottom))
     region = im2.crop((left, top, right, bottom))
-    region.save("../temp/ou.png")
+    region.save("../temp/out.png")
 
 
 def main():
-    im = Image.open("../temp/ou.png")
+    im = Image.open("../temp/out.png")
     img_size = im.size
     xx = 5
     yy = 1

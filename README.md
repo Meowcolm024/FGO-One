@@ -1,0 +1,3 @@
+# FGO Script
+
+Redesigning
