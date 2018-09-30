@@ -12,11 +12,11 @@ def init():
     bottom = img2_size[1]
     print((left, top, right, bottom))
     region = im2.crop((left, top, right, bottom))
-    region.save("../temp/out.png")
+    region.save("../temp/ou.png")
 
 
 def main():
-    im = Image.open("../temp/out.png")
+    im = Image.open("../temp/ou.png")
     img_size = im.size
     xx = 5
     yy = 1
