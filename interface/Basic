@@ -1,6 +1,6 @@
 __metaclass__ = type
 
-from util.cvs import *
+from util.cvs import location
 from util.anti import *
 
 

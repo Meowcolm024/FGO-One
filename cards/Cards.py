@@ -1,5 +1,5 @@
 __metaclass__ = type
-from cards.Attack import *
+from cards.attack import *
 
 
 class Card:
