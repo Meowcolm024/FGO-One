@@ -1,3 +1,3 @@
 # FGO Script
 
-Redesigning
+Redesigning the whole script and improve the algorithm.s

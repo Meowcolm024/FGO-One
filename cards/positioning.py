@@ -25,7 +25,7 @@ def init_cards():
 
     card_types = [quick_card, arts_card, buster_card]
     mark_types = [resistance_mark, restraint_mark]
-
+    # get the coordinates, mark and type of the card
     for i in range(5):
         for card_type in card_types:
             sh = f"./temp/{i}.png"

@@ -2,7 +2,7 @@ from PIL import Image
 from config import screenshot_path
 
 
-def init():
+def init():  # split the screenshot in half
     im2 = Image.open(f"./{screenshot_path}")
     img2_size = im2.size
     # print("width & height: {}".format(img2_size))
@@ -16,7 +16,7 @@ def init():
     region.save("./temp/out.png")
 
 
-def main():
+def main():  # split the five order cards
     im = Image.open("./temp/out.png")
     img_size = im.size
     xx = 5

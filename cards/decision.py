@@ -6,7 +6,7 @@ def arrange():
     cards = positioning()
     total = 0
     rank = [0, 0, 0]
-
+    # calculate the attack
     for i in range(5):
         cards[i].priority = 0
         for j in range(5):
@@ -27,13 +27,13 @@ def arrange():
                                 cards[order].get_atk(0)
 
                     atk = cards[i].atk + cards[j].atk + cards[k].atk
-
+                    # get the highest attack
                     if atk > total:
                         total = atk
                         rank[0] = i
                         rank[1] = j
                         rank[2] = k
-
+                    # reset the attack index of the cards
                     for l in range(5):
                         cards[l].atk = 1.0
 
