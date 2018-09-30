@@ -2,7 +2,7 @@ from PIL import Image
 
 
 def init():
-    im2 = Image.open("../assets/test/t1.jpeg")
+    im2 = Image.open("../assets/test/t.jpeg")
     img2_size = im2.size
     print("width % height: {}".format(img2_size))
     gap = (img2_size[0] - 1920) / 2
