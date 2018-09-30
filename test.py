@@ -1,7 +1,8 @@
 from cards.decision import *
+from interface.interface import *
 from util.split import *
 
-
+"""
 split()
 cards = positioning()
 print('-------------')
@@ -11,3 +12,6 @@ print('-------------')
 rank = arrange()
 print('-------------')
 print("Coordinates of selected cards: ", rank)
+print('-------------')
+"""
+recognize()
