@@ -1,6 +1,7 @@
 # Android tap and swipe control
 
 import os
+from config import screenshot_path
 
 
 def tap(x0, y0):
@@ -27,4 +28,4 @@ def swipe(x0, y0, x1, y1, delay0):
 def screenshot():
     os.system('adb shell screencap -p /sdcard/sh.png')
     os.system('adb pull /sdcard/sh.png .')
-    return "../temp/sh.png"
+    return screenshot_path

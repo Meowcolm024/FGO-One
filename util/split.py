@@ -1,14 +1,15 @@
 from PIL import Image
+from config import screenshot_path
 
 
 def init():
-    im2 = Image.open("../assets/test/t1.jpeg")
+    im2 = Image.open(f"../{screenshot_path}")
     img2_size = im2.size
     print("width % height: {}".format(img2_size))
     gap = (img2_size[0] - 1920) / 2
     left = gap
     right = img2_size[0] - gap
-    top = img2_size[1] / 2
+    top = (img2_size[1] / 2) - 100
     bottom = img2_size[1]
     print((left, top, right, bottom))
     region = im2.crop((left, top, right, bottom))
