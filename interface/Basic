@@ -1,0 +1,12 @@
+__metaclass__ = type
+
+from util.cvs import *
+from util.anti import *
+
+
+class Basic:
+    def get_button(self, sh, kind):
+        position = location(sh, kind, 0.9)
+        x = position[0][0]
+        y = position[0][1]
+        basic_tap(x, y)
