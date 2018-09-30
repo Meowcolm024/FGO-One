@@ -6,10 +6,11 @@ from PIL import Image
 
 class Support:
     def __init__(self):
+        self.scene = []
         self.crd = []
 
-    def select_support(self, sh):
-        im = Image.open(f"./{sh}")
+    def select_support(self):
+        im = Image.open(f"./{self.scene}")
         im_size = im.size
 
         x = random.randrange(-300, 300) + (im_size[0] / 2)
