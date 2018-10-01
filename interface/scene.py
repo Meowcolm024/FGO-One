@@ -12,3 +12,6 @@ battle_scenes = ["quick", "arts", "buster"]
 
 # the post-battle interface, which needs to tap on special location
 finish_scenes = ["bond", "master"]
+
+# the loading/fighting interface, random tap and swipe to avoid being ban
+loading_scenes = ["loading", "fighting"]

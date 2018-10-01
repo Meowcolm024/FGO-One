@@ -18,8 +18,9 @@ class Finish:
                 im = Image.open(f"./{self.scene}")
                 im_size = im.size
                 x0 = im_size[0] / 4
+                y0 = im_size[0] / 4
                 x = random.randrange(-x0, x0) + (im_size[0] / 2)
-                y = random.randrange(-200, -10) + im_size[1]
+                y = random.randrange(-y0, y0) + (im_size[1] / 2)
 
                 print("Checked: ", finish_scene, x, y)
 

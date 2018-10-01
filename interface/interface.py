@@ -3,6 +3,7 @@ from interface.scene import *
 from interface.Basic import *
 from interface.Support import *
 from interface.Finish import *
+from interface.Loading import *
 from util.cvs import check
 from config import screenshot_path
 
@@ -42,3 +43,11 @@ def recognize():
             finish_interface = Finish()
             finish_interface.scene = sh
             finish_interface.pass_finish()
+    # recognize loading/in-battle interface
+    for loading_scene in loading_scenes:
+        loading_path = f"./assets/scene/{loading_scene}.png"
+        if check(sh, loading_path, threshold) == 1:
+            loading_interface = Loading()
+            loading_interface.scene = sh
+            loading_interface.mark = loading_scene
+            loading_interface.have_fun()
