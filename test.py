@@ -1,17 +1,13 @@
-from cards.decision import *
 from interface.interface import *
-from util.split import *
+from recovery.recover import *
+from config import recovery_times
 
-"""
-split()
-cards = positioning()
-print('-------------')
-for num in range(5):
-    print(f"Card({num}): ", cards[num].crd, cards[num].mark, cards[num].type)
-print('-------------')
-rank = arrange()
-print('-------------')
-print("Coordinates of selected cards: ", rank)
-print('-------------')
-"""
-recognize()
+times = recovery_times
+
+while 1 == 1:
+    recognize()
+    ap = recover_ap()
+    if ap == 1 and times == 0:
+        break
+    elif ap == 2:
+        times = times - 1
