@@ -23,6 +23,3 @@ class Finish:
                 y = random.randrange(-y0, y0) + (im_size[1] / 2)
 
                 print("Checked: ", finish_scene, x, y)
-
-
-
