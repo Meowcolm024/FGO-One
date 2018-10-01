@@ -1,7 +1,7 @@
 """initialize paths, checkpoints etc"""
 
 # initialize screenshot path (default: "sh.png")
-screenshot_path = "assets/test/t4.jpeg"
+screenshot_path = "assets/test/decide.jpeg"
 
 # initialize checkpoint template file, located in "./assets/scene/" (default: "checkpoint")
 checkpoint = "checkpoint"
