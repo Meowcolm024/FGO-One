@@ -21,7 +21,7 @@ def recognize():
             basic_interface.sh = sh
             basic_interface.get_button()
             print("Buttons: ", basic_interface.btn_crd)
-            return
+            return basic_interface.end
     # recognize battle interface
     for battle_scene in battle_scenes:
         battle_path = f"./assets/battle/{battle_scene}.png"
