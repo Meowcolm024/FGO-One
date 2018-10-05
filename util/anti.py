@@ -19,8 +19,8 @@ def tap_card(x, y):  # tap on random location of the card
 
 
 def basic_tap(x, y):  # tap on random location of the button
-    x0 = x + random.uniform(-15, 15)
-    y0 = y + random.uniform(-15, 15)
+    x0 = x + random.uniform(-10, 10)
+    y0 = y + random.uniform(-10, 10)
     x0 = int(x0)
     y0 = int(y0)
     tap(x0, y0)

@@ -2,8 +2,8 @@ __metaclass__ = type
 
 from interface.scene import loading_scenes
 import time
-import random
 from PIL import Image
+from util.anti import *
 
 
 class Loading:
@@ -24,18 +24,19 @@ class Loading:
             max_act = 5
         action = []
         press = "tap"
-        swipe = "swipe"
+        swipes = "swipe"
         for i in range(5):
             action.append(press)
-            action.append(swipe)
+            action.append(swipes)
         random.shuffle(action)
         # do random actions
         for j in range(random.randrange(1, max_act)):
-            if action[j] == "tap":
+            if action[j] == press:
                 x0 = 2 * x + random.randrange(-x, x)
                 y0 = 2 * y + random.randrange(-y, y)
                 print("Tap:", self.mark, x0, y0)
-            if action[j] == "swipe":
+                basic_tap(x0, y0)
+            if action[j] == swipes:
                 time.sleep(0.2)
                 x0 = 2 * x + random.randrange(-x, x)
                 y0 = 2 * y + random.randrange(-y, y)
@@ -43,3 +44,4 @@ class Loading:
                 y1 = 2 * y + random.randrange(-y / 2, y / 2)
                 delay = random.randrange(100, 1000)
                 print("Swipe:", self.mark, x0, y0, x1, y1, delay)
+                swipe(x0, y0, x1, y1, random.randrange(50, 250))

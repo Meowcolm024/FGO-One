@@ -3,6 +3,7 @@ __metaclass__ = type
 from util.filter import filter_crd
 from util.cvs import check
 from recovery.panel import *
+from util.anti import basic_tap
 
 
 class Recovery:
@@ -19,11 +20,13 @@ class Recovery:
             self.crd[0] = position[0][0]
             self.crd[1] = position[0][1]
             print("Apple: ", self.crd[0], self.crd[1])
+            basic_tap(self.crd[0], self.crd[1])
             self.done = 1
         if check(self.scene, decide_path, 0.9) == 1:
             position = filter_crd(self.scene, decide_path, 0.9)
             self.crd[0] = position[0][0]
             self.crd[1] = position[0][1]
             print("Decide: ", self.crd[0], self.crd[1])
+            basic_tap(self.crd[0], self.crd[1])
             self.done = 2
 

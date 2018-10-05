@@ -2,6 +2,7 @@ __metaclass__ = type
 
 import random
 from PIL import Image
+from util.anti import basic_tap
 
 
 class Support:
@@ -17,4 +18,4 @@ class Support:
         y = random.randrange(-200, 200) + (im_size[1] / 2)
 
         self.crd = [x, y]
-
+        basic_tap(self.crd[0], self.crd[1])
