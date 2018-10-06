@@ -10,6 +10,7 @@ class Card:
         self.type = ""
         self.priority = []
         self.atk = 1.0
+        self.servant = []
 
     def get_atk(self, ex):
 
@@ -38,3 +39,6 @@ class Card:
             self.atk = self.atk * restraint
         elif self.mark == resistance_mark:
             self.atk = self.atk * resistance
+
+    def get_extra(self):
+        print(self.crd)  # 233
