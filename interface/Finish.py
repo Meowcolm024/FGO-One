@@ -1,6 +1,7 @@
 __metaclass__ = type
 
 from util.cvs import check
+from util.log import output_log
 from interface.scene import finish_scenes
 from PIL import Image
 import random
@@ -24,6 +25,7 @@ class Finish:
                 y = random.randrange(-y0, y0) + (im_size[1] / 2)
 
                 self.crd = [x, y]
-
-                print("Checked: ", finish_scene, x, y)
-                basic_tap(self.crd[0],self.crd[1])
+                out = "[FINISH] Checked: " + str(finish_scene) + str(x) + str(y)
+                print(out)
+                output_log(out)
+                basic_tap(self.crd[0], self.crd[1])

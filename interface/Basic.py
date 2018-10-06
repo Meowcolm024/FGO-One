@@ -6,7 +6,6 @@ from util.cvs import check
 
 
 class Basic:
-
     def __init__(self):
         self.scene = []
         self.sh = []
@@ -19,5 +18,5 @@ class Basic:
         self.btn_crd[1] = position[0][1]
         basic_tap(self.btn_crd[0], self.btn_crd[1])
 
-        if check(self.sh, self.scene, 0.9) == 1:
+        if check(self.sh, "./assets/scene/win.png", 0.9) == 1:
             self.end = "end"

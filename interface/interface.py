@@ -5,6 +5,7 @@ from interface.Support import *
 from interface.Finish import *
 from interface.Loading import *
 from util.cvs import check
+from util.log import output_log
 from config import screenshot_path
 
 
@@ -20,7 +21,9 @@ def recognize():
             basic_interface.scene = basic_path
             basic_interface.sh = sh
             basic_interface.get_button()
-            print("Buttons: ", basic_interface.btn_crd)
+            out = "[BASIC] Buttons: " + str(basic_interface.btn_crd)
+            print(out)
+            output_log(out)
             return basic_interface.end
     # recognize battle interface
     for battle_scene in battle_scenes:
@@ -28,7 +31,9 @@ def recognize():
         if check(sh, battle_path, threshold) == 1:
             battle_interface = Battle()
             battle_interface.get_cards()
-            print("Cards: ", battle_interface.card_crd)
+            out = "[BATTLE] Cards: " + str(battle_interface.card_crd)
+            print(out)
+            output_log(out)
             return
     # recognize support servant interface
     support_path = f"./assets/scene/{support_scene}.png"
@@ -36,7 +41,9 @@ def recognize():
         support_interface = Support()
         support_interface.scene = sh
         support_interface.select_support()
-        print("Position: ", support_interface.crd)
+        out = "[SUPPORT] Position: " + str(support_interface.crd)
+        print(out)
+        output_log(out)
         return
     # recognize finish interface
     for finish_scene in finish_scenes:

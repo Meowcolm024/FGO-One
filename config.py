@@ -4,10 +4,10 @@
 screenshot_path = "sh.png"
 
 # initialize checkpoint template file, located in "./assets/scene/" (default: "checkpoint")
-checkpoint = "checkpoint1"
+checkpoint = "checkpoint2"
 
 # initialize how many "Golden Apples" would be used (default: 0)
-recovery_times = 0
+recovery_times = 1
 
 # initialize how many times will be played ("inf" for infinity)
 run_time = 3

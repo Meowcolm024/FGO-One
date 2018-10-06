@@ -1,6 +1,7 @@
 # FGO Script
 
 Redesigning the whole script and improve the algorithm.
+> __AP Recovery Function__ not tested yet!
 
 ## About
   
@@ -15,4 +16,5 @@ AP for longtime running.
 attack.  
 2. __Auto AP Recovery__: Automatically recover AP when AP is insufficient, allow to manually 
 set how many times will be conducted.   
-3. __Customizable runtime__: Allow to set how many times it will be played  
+3. __Customizable Runtime__: Allow to set how many times it will be played.  
+4. __Customizable Script__: Can easily add other functions, modify checkpoints to the script.

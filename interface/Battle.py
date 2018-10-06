@@ -18,4 +18,4 @@ class Battle:
         for i in range(3):
             tap_card(rank[i][0], rank[i][1])
             time.sleep(random.uniform(0.1, 0.2))
-        time.sleep(2.4)
+        time.sleep(3)
