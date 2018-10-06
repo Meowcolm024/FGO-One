@@ -1,7 +1,6 @@
 # FGO Script
 
 Redesigning the whole script and improve the algorithm.
-> __AP Recovery Function__ not tested yet!
 
 ## About
   

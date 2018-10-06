@@ -46,7 +46,7 @@ class Loading:
                 x1 = 2 * x + random.randrange(-x / 3, x / 3)
                 y1 = 2 * y + random.randrange(-y / 3, y / 3)
                 delay = random.randrange(100, 1000)
-                out = "[LOADING] Swipe: " + str(self.mark) + str(x0) + " " + str(y0) + " " +\
+                out = "[LOADING] Swipe: " + str(self.mark) + " " + str(x0) + " " + str(y0) + " " +\
                       str(x1) + " " + str(y1) + " " + str(delay)
                 print(out)
                 output_log(out)
