@@ -10,7 +10,7 @@ class Card:
         self.type = ""
         self.priority = []
         self.atk = 1.0
-        self.servant = []
+        self.chain = 0
 
     def get_atk(self, ex):
 
