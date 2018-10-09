@@ -13,7 +13,7 @@ def init():
 
 def init_extra():
     exists = [i for i in range(5)]
-
+    # filter same servants
     for exist in exists:
         tmp = f"./temp/s{exist}.png"
         for exis in exists:
@@ -23,10 +23,9 @@ def init_extra():
                     exists.remove(exis)
 
     counts = [i for i in range(len(exists))]
-
     for count in counts:
         servants[count].order = exists[count]
-
+    # mark servants
     for coun in counts:
         stmp = f"./temp/s{servants[coun].order}.png"
         for k in range(5):
@@ -34,10 +33,8 @@ def init_extra():
             if check(spic, stmp, 0.9) == 1:
                 servants[coun].count.append(k)
 
-    for j in counts:
-        print(servants[j].count)
-
 
 def get_extra():
     init()
     init_extra()
+    return servants

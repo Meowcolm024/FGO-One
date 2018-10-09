@@ -1,6 +1,7 @@
 # FGO Script
 
-Redesigning the whole script and improve the algorithm.
+Redesigning the whole script and improve the algorithm.  
+__Try adding Servant recognition__
 
 ## About
   
