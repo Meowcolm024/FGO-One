@@ -11,6 +11,8 @@ class Card:
         self.priority = []
         self.atk = 1.0
         self.chain = 0
+        self.servant = []
+        self.serial = []
 
     def get_atk(self, ex):
 
