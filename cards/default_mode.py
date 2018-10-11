@@ -1,9 +1,8 @@
-from cards.positioning import *
+from cards.kind import buster_card
 
 
-def arrange():
+def arrange(cards):
 
-    cards = positioning()
     total = 0
     rank = [0, 0, 0]
     # calculate the attack

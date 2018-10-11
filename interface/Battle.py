@@ -1,7 +1,7 @@
 __metaclass__ = type
 
 import time
-from cards.decision import arrange
+from cards.default_mode import arrange
 from util.split import split
 from util.anti import tap_card
 import random
