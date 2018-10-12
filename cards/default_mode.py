@@ -2,7 +2,6 @@ from cards.kind import buster_card
 
 
 def arrange(cards):
-
     total = 0
     rank = [0, 0, 0]
     # calculate the attack

@@ -37,13 +37,13 @@ class Card:
 
         # attack from extra card
         if self.serial == "bc":
-            self.atk = self.atk + 5.2
+            self.atk = self.atk + 1.7
         if self.serial == "aqc":
-            self.atk = self.atk + 3.5
+            self.atk = self.atk + 1.2
         if self.serial == "bnc":
-            self.atk = self.atk + 3
+            self.atk = self.atk + 1
         if self.serial == "nc":
-            self.atk = self.atk + 2
+            self.atk = self.atk + 0.7
 
         # attack from mark of the card
         if self.mark == restraint_mark:
