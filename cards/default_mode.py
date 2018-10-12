@@ -46,12 +46,12 @@ def arrange(cards):
                                 for orderd in orders:
                                     cards[orderd].serial = "nc"
 
-                            # normal recognition
-                            for order in orders:
-                                if cards[i].type == buster_card:
-                                    cards[order].get_atk(1)
-                                else:
-                                    cards[order].get_atk(0)
+                        # normal recognition
+                        for order in orders:
+                            if cards[i].type == buster_card:
+                                cards[order].get_atk(1)
+                            else:
+                                cards[order].get_atk(0)
 
                     atk = cards[i].atk + cards[j].atk + cards[k].atk
                     # get the highest attack
