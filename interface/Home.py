@@ -1,6 +1,4 @@
 import cv2
-
-from cards.Combat import Combat
 from interface.Battle import *
 from interface.scene import *
 from interface.Basic import *

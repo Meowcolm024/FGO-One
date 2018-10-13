@@ -1,4 +1,4 @@
-from interface.Interface import Interface
+from interface.Home import Interface
 
 
 s = Interface()
