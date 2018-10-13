@@ -2,4 +2,5 @@ from interface.Major import Major
 
 
 s = Major()
-s.recognize()
+out = s.recognize()
+print(out)

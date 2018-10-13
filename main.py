@@ -15,7 +15,8 @@ while times >= 0:
 
     time.sleep(0.2)
     screenshot()
-    end = recognize()
+    s = Major()
+    end = s.recognize()
 
     if play == "inf":
 

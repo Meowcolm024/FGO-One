@@ -67,8 +67,9 @@ class Major:
                 break
 
     def recognize(self):
-        self.get_basic()
+        back = self.get_basic()
         self.get_support()
         self.get_battle()
         self.get_finish()
         self.get_loading()
+        return back
