@@ -1,9 +1,5 @@
-from util.split import split
-from cards.Combat import *
+from interface.Interface import Interface
 
 
-split()
-test = Combat()
-test.get_arrangement()
-for i in range(5):
-    print(test.cards[i].servant, test.cards[i].chain, test.cards[i].crd, test.cards[i].mark, test.cards[i].serial)
+s = Interface()
+s.recognize()
