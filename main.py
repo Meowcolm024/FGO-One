@@ -1,4 +1,4 @@
-from interface.Home import *
+from interface.Major import *
 from recovery.recover import *
 from config import recovery_times, run_time
 from util.ats import screenshot

@@ -1,5 +1,5 @@
-from interface.Home import Interface
+from interface.Major import Major
 
 
-s = Interface()
+s = Major()
 s.recognize()

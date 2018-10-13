@@ -1,4 +1,3 @@
-import cv2
 from interface.Battle import *
 from interface.scene import *
 from interface.Basic import *
@@ -13,7 +12,7 @@ from util.split import split
 __metaclass__ = type
 
 
-class Interface:
+class Major:
     def __init__(self):
         self.screenshot = cv2.imread(screenshot_path, 0)
         self.threshold = 0.9
