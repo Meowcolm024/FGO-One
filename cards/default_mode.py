@@ -5,14 +5,14 @@ def arrange(cards):
     total = 0
     rank = [0, 0, 0]
     # calculate the attack
-    for i in range(5):
+    for i in range(len(cards)):
         cards[i].priority = 0
-        for j in range(5):
+        for j in range(len(cards)):
             if j == i:
                 continue
             else:
                 cards[j].priority = 1
-                for k in range(5):
+                for k in range(len(cards)):
                     if k == i or k == j:
                         continue
                     else:
