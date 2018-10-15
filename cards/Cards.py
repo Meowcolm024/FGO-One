@@ -50,4 +50,3 @@ class Card:
             self.atk = self.atk * restraint
         elif self.mark == resistance_mark:
             self.atk = self.atk * resistance
-

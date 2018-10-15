@@ -12,7 +12,6 @@ f.write(st)
 f.close()
 
 while times >= 0:
-
     time.sleep(0.2)
     screenshot()
     s = Major()
