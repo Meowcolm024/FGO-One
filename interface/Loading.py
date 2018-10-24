@@ -1,6 +1,5 @@
 __metaclass__ = type
 
-from interface.scene import loading_scenes
 import time
 from PIL import Image
 from util.anti import *
@@ -19,9 +18,9 @@ class Loading:
         y = im_size[1] / 4
         # create random action list
         max_act = []
-        if self.mark == loading_scenes[1]:
+        if self.mark == 1:
             max_act = 2
-        elif self.mark == loading_scenes[0]:
+        elif self.mark == 0:
             max_act = 5
         action = []
         press = "tap"
@@ -35,7 +34,7 @@ class Loading:
             if action[j] == press:
                 x0 = 2 * x + random.randrange(-x, x)
                 y0 = 2 * y + random.randrange(-y, y - 100)
-                out = "[LOADING] Tap: " + str(self.mark) + " " + str(x0) + " " + str(y0)
+                out = "[LOADING] Tap: [" + str(self.mark) + "] " + str(x0) + " " + str(y0)
                 print(out)
                 output_log(out)
                 basic_tap(x0, y0)
@@ -46,7 +45,7 @@ class Loading:
                 x1 = 2 * x + random.randrange(-x / 3, x / 3)
                 y1 = 2 * y + random.randrange(-y / 3, y / 3)
                 delay = random.randrange(100, 1000)
-                out = "[LOADING] Swipe: " + str(self.mark) + " " + str(x0) + " " + str(y0) + " " +\
+                out = "[LOADING] Swipe: [" + str(self.mark) + "] " + str(x0) + " " + str(y0) + " " +\
                       str(x1) + " " + str(y1) + " " + str(delay)
                 print(out)
                 output_log(out)

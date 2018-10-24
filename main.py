@@ -1,4 +1,4 @@
-from interface.interface import *
+from interface.Major import *
 from recovery.recover import *
 from config import recovery_times, run_time
 from util.ats import screenshot
@@ -12,10 +12,10 @@ f.write(st)
 f.close()
 
 while times >= 0:
-
     time.sleep(0.2)
     screenshot()
-    end = recognize()
+    s = Major()
+    end = s.recognize()
 
     if play == "inf":
 

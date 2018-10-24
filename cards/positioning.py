@@ -30,7 +30,6 @@ def init_cards():
         for card_type in card_types:
             sh = f"./temp/{i}.png"
             tmpl = f"./assets/battle/{card_type}.png"
-            # print(sh, tmpl)
             if check(sh, tmpl, 0.9) == 1:
                 pos = filter_crd(sh, tmpl, 0.9)
                 x = pos[0][0] + gap + (i * 384)

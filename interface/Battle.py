@@ -1,20 +1,18 @@
-__metaclass__ = type
-
+from cards.Combat import Combat
 import time
-from cards.decision import arrange
-from util.split import split
 from util.anti import tap_card
 import random
+from util.log import output_log
 
 
-class Battle:
-    def __init__(self):
-        self.card_crd = []
-
+class Battle(Combat):
     def get_cards(self):
-        split()
-        rank = arrange()
-        self.card_crd = [rank[0], rank[1], rank[2]]
+        rank = [self.card_crd[0], self.card_crd[1], self.card_crd[2]]
+        print(rank)
+
+        out = "[BATTLE] Cards: " + str(self.card_crd[0]) + " " + str(self.card_crd[1]) + " " + str(self.card_crd[2])
+        output_log(out)
+
         for i in range(3):
             tap_card(rank[i][0], rank[i][1])
             time.sleep(random.uniform(0.1, 0.2))
