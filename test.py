@@ -1,4 +1,5 @@
 from interface.Major import Major
+import pytesseract
 
 
 s = Major()
