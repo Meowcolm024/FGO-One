@@ -1,3 +1,4 @@
+"""detect servants"""
 from util.cvs import check
 from extra.Servant import *
 
