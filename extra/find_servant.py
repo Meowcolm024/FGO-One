@@ -52,7 +52,7 @@ def decide():
         existss = [i for i in range(5)]
         for exist in existed:
             for exis in exists:
-                tmp = f"./temp/s{exist}.png"
+                tmp = f"./temp/servant{exist}.png"
                 pic = f"./temp/{exis}.png"
                 if check(pic, tmp, 0.9) == 1:
                     existss.remove(exis)
