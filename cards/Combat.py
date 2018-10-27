@@ -1,3 +1,4 @@
+import time
 from extra.find_servant import get_servant
 from extra.matching import matching
 from config import script_mode
@@ -19,13 +20,11 @@ class Combat:
         self.card_crd = self.get_np()
 
     def get_np(self):
+        time.sleep(0.7)
         if not self.turns:
             return self.get_arrangement()
         a = self.turns[0]
-        if len(self.turns) == 3:
-            b = self.turns[2]
-        else:
-            b = self.turns[1]
+        b = self.turns[len(self.turns)-1]
         npcrd = []
         if float(a) / float(b) == 1:
             nps = match_np()

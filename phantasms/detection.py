@@ -35,8 +35,7 @@ def match_servants():
         templ = f"./temp/servant{servant}.png"
         for i in range(3):
             img = f"./temp/np{i}.png"
-            if check(img, templ, 0.7) == 1:
-                nobles[i].ready = 1
+            if check(img, templ, 0.75) == 1:
                 x = orgx + i * length
                 y = exacty
                 nobles[i].crd = [x, y]
@@ -66,6 +65,6 @@ def match_np():
     match_servants()
 
     for i in range(len(nobles)):
-        print(nobles[i].crd)
+        print("npcrd: ", nobles[i].crd)
 
     return nobles
