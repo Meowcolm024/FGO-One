@@ -38,7 +38,7 @@ def get_crd():
     exactx = 300
     orgx = gap + length + exactx
     height = img_size[1]
-    exacty = height / 2
+    exacty = height * 2 / 3
 
     for i in range(3):
         if nobles[i].ready == 1:
@@ -52,5 +52,4 @@ def match_np():
     match_servants()
     get_crd()
 
-    for p in range(3):
-        print(nobles[p].servant, nobles[p].ready, nobles[p].crd)
+    return nobles
