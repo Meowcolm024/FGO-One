@@ -22,14 +22,27 @@ def match_servants():
     for j in range(len(servants)):
         nobles[j].servant = servants[j]
 
+    img = Image.open("./temp/np.png")
+    img_size = img.size
+    gap = (img_size[0] - 1920) / 2
+    length = 384
+    exactx = 210
+    orgx = gap + length + exactx
+    height = img_size[1]
+    exacty = height * 2 / 3
+
     for servant in servants:
         templ = f"./temp/servant{servant}.png"
         for i in range(3):
             img = f"./temp/np{i}.png"
             if check(img, templ, 0.7) == 1:
                 nobles[i].ready = 1
+                x = orgx + i * length
+                y = exacty
+                nobles[i].crd = [x, y]
 
 
+"""
 def get_crd():
     img = Image.open("./temp/np.png")
     img_size = img.size
@@ -45,12 +58,12 @@ def get_crd():
             x = orgx + i * length
             y = exacty
             nobles[i].crd = [x, y]
+"""
 
 
 def match_np():
     init()
     match_servants()
-    get_crd()
 
     for i in range(len(nobles)):
         print(nobles[i].crd)
