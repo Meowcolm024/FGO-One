@@ -19,5 +19,5 @@ class Basic:
         self.btn_crd[1] = position[0][1]
         basic_tap(self.btn_crd[0], self.btn_crd[1])
 
-        if analyze(self.sh, cv2.imread("./assets/scene/win.png", 0), 0.9) == 1:
+        if analyze(self.sh, cv2.imread("./assets/scene/win2.png", 0), 0.9) == 1:
             self.end = "end"
