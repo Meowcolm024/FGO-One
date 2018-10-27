@@ -1,7 +1,9 @@
 from PIL import Image
 from pytesseract import image_to_string
+from config import screenshot_path
 
-img = Image.open("assets/test/t2.jpeg")
+
+img = Image.open(screenshot_path)
 img_size = img.size
 
 gap = (img_size[0] - 1920) / 2

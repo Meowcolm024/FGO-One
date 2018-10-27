@@ -1,11 +1,11 @@
-from extra.extra import get_extra
 from cards.positioning import positioning
+from extra.find_servant import get_servant
 
 
 def matching():
 
     cards = positioning()
-    servants = get_extra()
+    servants = get_servant()
 
     counts = len(servants)
 

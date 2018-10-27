@@ -47,7 +47,7 @@ def decide():
         existed = exists
     elif len(existed) == 3:
         existed = existed
-    elif len(existed) < 3:
+    elif len(existed) != 0:
         exists = [i for i in range(5)]
         existss = [i for i in range(5)]
         for exist in existed:
@@ -89,7 +89,7 @@ def init_extra():
                 servants[coun].count.append(k)
 
 
-def get_extra():
+def get_servant():
     init()
     init_extra()
     return servants

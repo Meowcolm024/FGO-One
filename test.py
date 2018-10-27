@@ -1,4 +1,5 @@
 from interface.Major import Major
+from phantasms.detection import match_np
 
 """
 s = Major()
@@ -9,7 +10,8 @@ print(out)
 
 from util.split import split
 from util.cvs import check
-from extra.find_servant import get_extra
+from extra.matching import matching
+from phantasms.turns import get_turns
 
 split()
 
@@ -23,12 +25,17 @@ for exist in exists:
                 exists.remove(exis)
 
 np = []
-for i in range(1, 4):
+for i in range(3):
     for j in exists:
         if check(f"./temp/np{i}.png", f"./temp/s{j}.png", 0.75) == 1:
             np.append(i)
 
 print(np)
-
-a = get_extra()
-print(a)
+print("--------")
+a = matching()
+for i in range(5):
+    print(a[i].chain)
+print("--------")
+get_turns()
+print("--------")
+match_np()

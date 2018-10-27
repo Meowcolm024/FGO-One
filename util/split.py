@@ -58,7 +58,7 @@ def np_split():
         right = left + x
         low = y
         region = im.crop((left, up, right, low))
-        region.save(f"./temp/np{i}.png")
+        region.save(f"./temp/np{i-1}.png")
 
 
 def split():
