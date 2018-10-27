@@ -2,6 +2,7 @@ from interface.Major import *
 from recovery.recover import *
 from config import recovery_times, run_time
 from util.ats import screenshot
+from util.clean import clean_tmp
 
 times = recovery_times
 play = run_time
@@ -10,6 +11,8 @@ f = open('log.txt', 'w')
 st = '[MAIN] MAX APPLES: ' + str(times) + '\r' + '[MAIN] MAX TIMES: ' + str(play) + '\r'
 f.write(st)
 f.close()
+
+clean_tmp()
 
 while times >= 0:
     time.sleep(0.2)

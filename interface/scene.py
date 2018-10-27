@@ -2,7 +2,7 @@
 from config import checkpoint
 
 # basic interface, which requires tapping ONE button
-basic_scenes = [checkpoint, "standby", "attack", "win"]
+basic_scenes = [checkpoint, "standby", "attack", "win", "mistake"]
 
 # the support interface, which requires random tapping
 support_scene = "support"

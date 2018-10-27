@@ -19,6 +19,8 @@ class Combat:
         self.card_crd = self.get_np()
 
     def get_np(self):
+        if not self.turns:
+            return self.get_arrangement()
         a = self.turns[0]
         if len(self.turns) == 3:
             b = self.turns[2]

@@ -60,7 +60,7 @@ def arrange(cards):
                         rank[1] = j
                         rank[2] = k
                     # reset the attack index of the cards
-                    for l in range(5):
+                    for l in range(len(cards)):
                         cards[l].atk = 1.0
                         cards[l].serial = ""
 
