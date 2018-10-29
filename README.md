@@ -2,6 +2,8 @@
 
 Redesigning the whole script and improve the algorithm. 
 
+For instructions go to [wiki](https://github.com/Meowcolm024/FGO-One/wiki) qwq
+
 ## About this branch
 
 __Added__:
