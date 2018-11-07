@@ -25,7 +25,7 @@ def match_servants():
     img = Image.open("./temp/np.png")
     img_size = img.size
     gap = (img_size[0] - 1920) / 2
-    length = 384
+    length = 384  # 1920/5
     exactx = 210
     orgx = gap + length + exactx
     height = img_size[1]
@@ -35,29 +35,10 @@ def match_servants():
         templ = f"./temp/servant{servant}.png"
         for i in range(3):
             img = f"./temp/np{i}.png"
-            if check(img, templ, 0.75) == 1:
+            if check(img, templ, 0.68) == 1:
                 x = orgx + i * length
                 y = exacty
                 nobles[i].crd = [x, y]
-
-
-"""
-def get_crd():
-    img = Image.open("./temp/np.png")
-    img_size = img.size
-    gap = (img_size[0] - 1920) / 2
-    length = 384
-    exactx = 300
-    orgx = gap + length + exactx
-    height = img_size[1]
-    exacty = height * 2 / 3
-
-    for i in range(3):
-        if nobles[i].ready == 1:
-            x = orgx + i * length
-            y = exacty
-            nobles[i].crd = [x, y]
-"""
 
 
 def match_np():

@@ -20,7 +20,7 @@ class Combat:
         self.card_crd = self.get_np()
 
     def get_np(self):
-        time.sleep(0.7)
+        time.sleep(0.5)
         if not self.turns:
             return self.get_arrangement()
         a = self.turns[0]
