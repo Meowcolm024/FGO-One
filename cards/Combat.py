@@ -1,8 +1,12 @@
-from extra.extra import get_extra
+import time
+from extra.find_servant import get_servant
 from extra.matching import matching
 from config import script_mode
 from cards.default_mode import arrange
 from cards.quick_mode import get_quick
+from cards.arts_mode import get_arts
+from phantasms.detection import match_np
+from phantasms.turns import get_turns
 
 __metaclass__ = type
 
@@ -10,9 +14,30 @@ __metaclass__ = type
 class Combat:
     def __init__(self):
         self.cards = matching()
-        self.servants = get_extra()
+        self.servants = get_servant()
         self.modes = script_mode
-        self.card_crd = self.get_arrangement()
+        self.turns = get_turns()
+        self.card_crd = self.get_np()
+
+    def get_np(self):
+        time.sleep(0.5)
+        if not self.turns:
+            return self.get_arrangement()
+        a = self.turns[0]
+        b = self.turns[len(self.turns)-1]
+        npcrd = []
+        if float(a) / float(b) == 1:
+            nps = match_np()
+            if len(nps) == 0:
+                return self.get_arrangement()
+            else:
+                for i in range(len(nps)):
+                    if nps[i].crd:
+                        npcrd.append(nps[i].crd)
+                npcrd = npcrd + self.get_arrangement()
+            return npcrd
+        else:
+            return self.get_arrangement()
 
     def get_arrangement(self):
         if self.modes == "default_mode":
@@ -20,5 +45,8 @@ class Combat:
             return rank
         if self.modes == "quick_mode":
             rank = get_quick(self.cards)
+            return rank
+        if self.modes == "arts_mode":
+            rank = get_arts(self.cards)
             return rank
 

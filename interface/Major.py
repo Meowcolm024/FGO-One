@@ -15,7 +15,7 @@ __metaclass__ = type
 class Major:
     def __init__(self):
         self.screenshot = cv2.imread(screenshot_path, 0)
-        self.threshold = 0.9
+        self.threshold = 0.85
         self.basic_scenes = [cv2.imread(f"./assets/scene/{basic_scene}.png", 0) for basic_scene in basic_scenes]
         self.battle_scenes = [cv2.imread(f"./assets/battle/{battle_scene}.png", 0) for battle_scene in battle_scenes]
         self.support_scene = cv2.imread(f"./assets/scene/{support_scene}.png", 0)
