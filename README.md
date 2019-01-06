@@ -4,7 +4,8 @@ _A Redesigned FGO Script_
 
 For usages, go to [Wiki](https://github.com/Meowcolm024/FGO-One/wiki)  
 Showcase video on [Bilibili](https://www.bilibili.com/video/av35291507)  
-The main thinking of this script on [Jianshu](https://www.jianshu.com/p/1b2ca5454c73)
+The main thinking of this script on [Jianshu](https://www.jianshu.com/p/1b2ca5454c73)  
+关于如何配置脚本，请查看[Wiki](https://github.com/Meowcolm024/FGO-One/wiki)  
 
 ## Features
 
