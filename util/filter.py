@@ -1,4 +1,4 @@
-from util.cvs import location,position
+from util.cvs import location, position
 
 
 def filter_crd(sh, tmp, thd):  # get the coordinates of cards/marks

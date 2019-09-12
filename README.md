@@ -1,5 +1,18 @@
 # FGO-One Script
 
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Meowcolm024/FGO-One?include_prereleases)
+![GitHub issues](https://img.shields.io/github/issues/Meowcolm024/FGO-One)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Meowcolm024/FGO-One)
+![GitHub](https://img.shields.io/github/license/Meowcolm024/FGO-One)
+
+## Notice
+
+**由于国服已更改指令卡卡面，需要使用现在的界面的卡面重新制作template**
+
+**Besides, this project no longer maintains**
+
+## About
+
 _A Redesigned FGO Script_ 
 
 For usages, go to [Wiki](https://github.com/Meowcolm024/FGO-One/wiki)  
