@@ -24,7 +24,11 @@ class Major:
 
     def get_basic(self):
         for basic_scene in self.basic_scenes:
-            if analyze(self.screenshot, basic_scene, self.threshold) == 1:
+            x, y = basic_scene.shape[0:2]
+            xx, yy = self.screenshot.shape[0:2]
+            factor = min(1., 1. * xx / x, 1. * yy / y)
+            resized_scene = cv2.resize(basic_scene, int(x * factor), int(y * factor))
+            if analyze(self.screenshot, resized_scene, self.threshold) == 1:
                 basic_interface = Basic()
                 basic_interface.scene = basic_scene
                 basic_interface.sh = self.screenshot
