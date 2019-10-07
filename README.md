@@ -11,6 +11,8 @@
 
 **Besides, this project no longer maintains**
 
+目前在维护啊的与FGO脚本有关的项目：**[FGO-Automata](https://github.com/Meowcolm024/FGO-Automata)** （脚本+API）
+
 ## About
 
 _A Redesigned FGO Script_ 
