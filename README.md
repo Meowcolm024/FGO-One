@@ -11,7 +11,7 @@
 
 **Besides, this project no longer maintains**
 
-目前在维护啊的与FGO脚本有关的项目：**[FGO-Automata](https://github.com/Meowcolm024/FGO-Automata)** （脚本+API）
+与FGO脚本有关的项目：**[FGO-Automata](https://github.com/Meowcolm024/FGO-Automata)** （脚本+API）
 
 ## About
 
@@ -24,7 +24,6 @@ The main thinking of this script on [Jianshu](https://www.jianshu.com/p/1b2ca545
 
 ## Features
 
-1. Auto-rolling, including selecting _Checkpoint_, _Support Servants_ and 
-completing the battle.  
+1. Auto-rolling, including selecting _Checkpoint_, _Support Servants_ and completing the battle.  
 2. Multiple modes supported, and _Noble Phantasms_ is supported.  
 3. AP auto recovery when out of AP if is set.  

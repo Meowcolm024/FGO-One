@@ -8,7 +8,8 @@ times = recovery_times
 play = run_time
 
 f = open('log.txt', 'w')
-st = '[MAIN] MAX APPLES: ' + str(times) + '\r' + '[MAIN] MAX TIMES: ' + str(play) + '\r'
+st = '[MAIN] MAX APPLES: ' + \
+    str(times) + '\r' + '[MAIN] MAX TIMES: ' + str(play) + '\r'
 f.write(st)
 f.close()
 

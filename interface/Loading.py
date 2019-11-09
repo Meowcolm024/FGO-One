@@ -34,7 +34,8 @@ class Loading:
             if action[j] == press:
                 x0 = 2 * x + random.randrange(-x, x)
                 y0 = 2 * y + random.randrange(-y, y - 100)
-                out = "[LOADING] Tap: [" + str(self.mark) + "] " + str(x0) + " " + str(y0)
+                out = "[LOADING] Tap: [" + \
+                    str(self.mark) + "] " + str(x0) + " " + str(y0)
                 print(out)
                 output_log(out)
                 basic_tap(x0, y0)

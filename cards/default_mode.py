@@ -67,5 +67,3 @@ def arrange(cards):
     print("Order of the cards: ", rank)
     decision = [cards[rank[0]].crd, cards[rank[1]].crd, cards[rank[2]].crd]
     return decision
-
-

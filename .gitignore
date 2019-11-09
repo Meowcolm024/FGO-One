@@ -1,0 +1,10 @@
+/.idea
+/.vscode
+/__pycache__
+/a.out.dSYM
+/util/__pycache__
+/recovery/__pycache__
+/phantasms/__pycache__
+/interface/__pycache__
+/extra/__pycache__
+/cards/__pycache__
